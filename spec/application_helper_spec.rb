@@ -10,7 +10,7 @@ describe ApplicationHelper do
 		end
 
 		it "should include the base title" do
-			full_title('foo').should =~ /^Twansparent/
+			full_title('foo').should =~ /^Lasrtag/
 
 		end
 
