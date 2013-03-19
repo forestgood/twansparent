@@ -1,3 +1,19 @@
+<% if signed_in? %>
+	<div class="row">
+		<aside class="span4">
+			<section>
+				<%= render 'shared/user_info' %>
+			</section>
+			<section>
+				<%= render 'shared/micropost_form' %>
+			</section>
+		</aside>
+		<div class="span8">
+			<h3>Micropost Feed</h3>
+			<%= render 'shared/feed' %>
+		</div>
+	</div>
+<% else %>
 <center>
 <img src="/assets/lasrtaglogo.png" alt = " " />
 </center> </br>
@@ -33,6 +49,5 @@
 	      <p>Be known for knowing a topic</p>
 	    </center>
   	</div><!-- span -->
-
-
 </div>
+<% end %>
