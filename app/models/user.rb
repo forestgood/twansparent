@@ -15,7 +15,6 @@ class User < ActiveRecord::Base
 
   def feed
     # this is only a proto-feed.
-    self.microposts
     Micropost.where("user_id = ?", id)
   end
 
